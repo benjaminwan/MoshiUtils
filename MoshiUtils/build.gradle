@@ -6,13 +6,13 @@ plugins {
 group = "com.github.benjaminwan"
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion compile_SdkVersion
 
     defaultConfig {
-        minSdkVersion 21
-        targetSdkVersion 30
-        versionCode 1
-        versionName "1.0.0"
+        minSdkVersion min_SdkVersion
+        targetSdkVersion target_SdkVersion
+        versionCode project_versionCode
+        versionName project_versionName
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"

@@ -4,6 +4,15 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        release {
+            keyAlias 'moshi_utils'
+            keyPassword 'benjaminwan'
+            storeFile file('../appkey/moshi_utils.keystore')
+            storePassword 'benjaminwan'
+        }
+    }
+
     compileSdkVersion 30
 
     defaultConfig {
@@ -17,8 +26,13 @@ android {
     }
 
     buildTypes {
-        release {
+        debug {
             minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -28,6 +42,12 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+    applicationVariants.all {
+        variant ->
+            variant.outputs.all {
+                outputFileName = "${rootProject.name}-${defaultConfig.versionName}-${variant.buildType.name}.apk"
+            }
     }
 }
 

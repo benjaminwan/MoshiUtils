@@ -1,0 +1,3 @@
+rootProject.name = "MoshiUtilsDemo"
+include ':app'
+include ':MoshiUtils'

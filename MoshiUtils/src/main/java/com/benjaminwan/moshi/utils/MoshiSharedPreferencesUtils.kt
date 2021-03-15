@@ -44,7 +44,8 @@ inline fun <reified T> SharedPreferences.moshiList(key: String, defList: List<T>
             if (value.isNullOrEmpty()) {
                 return defList
             }
-            return fromJsonToListByMoshi(value) ?: defList
+            val list: List<T> = fromJsonToListByMoshi(value)
+            return if (list.isNotEmpty()) list else defList
         }
 
         override fun setValue(thisRef: Any, property: KProperty<*>, value: List<T>) {
@@ -68,7 +69,8 @@ inline fun <reified T1, reified T2> SharedPreferences.moshiMap(
         if (value.isNullOrEmpty()) {
             return defMap
         }
-        return fromJsonToMapByMoshi(value) ?: defMap
+        val map: Map<T1, T2> = fromJsonToMapByMoshi(value)
+        return if (map.isNotEmpty()) map else defMap
     }
 
     override fun setValue(thisRef: Any, property: KProperty<*>, value: Map<T1, T2>) {

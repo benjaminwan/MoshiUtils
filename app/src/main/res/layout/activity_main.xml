@@ -1,18 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Please Check Logcat!" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/testMoshiAnyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test Moshi Any" />
+
+    <Button
+        android:id="@+id/testMoshiListBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test Moshi List" />
+
+    <Button
+        android:id="@+id/testMoshiMapBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test Moshi Map" />
+
+    <Button
+        android:id="@+id/testSPAnyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test SharedPreferences Any" />
+
+    <Button
+        android:id="@+id/testSPListBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test SharedPreferences List" />
+
+    <Button
+        android:id="@+id/testSPMapBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test SharedPreferences Map" />
+
+</LinearLayout>

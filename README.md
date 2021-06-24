@@ -6,6 +6,10 @@
 ### Introduction
 Moshi Utils, written in kotlin
 
+### ChangeLog
+- v1.0.1: kotlin 1.4.30
+- v1.0.2: kotlin 1.5.10
+
 ### Installation
 0. root build.gradle add
 ```groovy

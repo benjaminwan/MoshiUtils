@@ -24,7 +24,7 @@ repositories {
 1. add dependencies
 ```groovy
 dependencies {
-    implementation 'com.github.benjaminwan:MoshiUtils:1.0.2'
+    implementation 'com.github.benjaminwan:MoshiUtils:1.0.3'
 }
 ```
 

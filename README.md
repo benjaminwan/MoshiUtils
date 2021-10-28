@@ -11,6 +11,7 @@ Moshi Utils, written in kotlin
 - v1.0.2: kotlin 1.5.10
 - v1.0.3: kotlin 1.5.20
 - v1.0.6: kotlin 1.5.21, AndroidStudio 2020.3.1, gradle 7.0.0, fix jitpack build error, fix jitpack publish error
+- v1.0.7: kotlin 1.5.30, gradle 7.0.3
 
 ### Installation
 0. root build.gradle add
@@ -25,7 +26,7 @@ repositories {
 1. add dependencies
 ```groovy
 dependencies {
-    implementation 'com.github.benjaminwan:MoshiUtils:1.0.6'
+    implementation 'com.github.benjaminwan:MoshiUtils:1.0.7'
 }
 ```
 

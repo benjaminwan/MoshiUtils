@@ -17,6 +17,7 @@ Moshi Utils, written in kotlin
 - v1.1.1: moshi 1.13.0, kotlin 1.6.10, sdk version: 21~ 31
 - v1.1.2: moshi 1.13.0, kotlin 1.6.20, sdk version: 21~ 31
 - v1.1.3: moshi 1.13.0, kotlin 1.6.21, sdk version: 21~ 31
+- v1.1.6: moshi 1.13.0, kotlin 1.8.10, sdk version: 21~ 33
 
 ### Installation
 0. root build.gradle add
@@ -31,7 +32,7 @@ repositories {
 1. add dependencies
 ```groovy
 dependencies {
-    implementation 'com.github.benjaminwan:MoshiUtils:1.1.2'
+    implementation 'com.github.benjaminwan:MoshiUtils:1.1.4'
 }
 ```
 
